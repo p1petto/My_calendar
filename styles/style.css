@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    margin: 2%;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    width: 90vw;
+}
+
+.new-task, .container-list{
+width: 90%;
+height: 80vh;
+font-size: 22px;
+}
+
+.new-task{
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+}
+
+.container-list{
+    background-color: white;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    max-width: 90%;
+    overflow: scroll;
+}
+
+
+.buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+
+.buttons .list-task {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+.buttons .list-task .bts {
+width: 100%;
+}
+
+.form-list{
+    background-color: white;
+    width: 50%;
+    height: 80%;
+    
+}
+
+.form-list input, .form-list select{
+    width: 100%;
+    min-height: 5vh;
+    font-size: 18px;
+}
+
+
+.form-list td{
+    vertical-align: top;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+
+.input-data{
+    max-width: 65%;
+}
+
+.input-time{
+    max-width: 30%;
+    margin-left: 5%;
+}
+.data-time{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.comment{
+    min-height: 20vh;
+}
+
+
+.editor{
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+  
+.bt {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+.add{
+    
+    width: 50%;
+    height: 70%;
+}
+.add:hover, .bt-close:hover, .bt-save:hover{
+    border: 2px dashed black;
+}
+
+.bts:hover{
+    background-color: aliceblue;
+}
+
+.td-bt{
+    text-align: right;
+}
+.bts{
+    border: none;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.btright{
+    border-right: none;
+}
+
+.edit{
+    border: none;
+}
+
+.task-list-table{
+    width: 100%;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+.task-list-table td{
+    border: 1px solid rgb(0, 0, 0);
+}
+.task-list-table tbody tr:nth-child(even) {
+	background-color: #C9E4F6;
+}
+.task-list-table tbody tr:nth-child(odd) {
+	background-color: white;
+}
+
+.edit-form > *{
+    margin: 10px;
+}
+
+.edit-form{
+    margin-bottom: 30%;
+}
+
+
+.edit-form-table{
+    width: 90%;
+}
+.edit-form-table input, .edit-form-table select{
+    width: 100%;
+    height: 5vh;
+}
+.edit-form-table .chbox{
+    height: auto;
+    width: auto;
+}
+.save-bt{
+    text-align: right;
+}
+
+.bt-close{
+    margin-left: 10%;
+    width: 10vw;
+}
+
+.bt-save{
+    width: 10vw;
+    margin-top: 10%;
+}
+
+.close-form{
+    width: 100%;
+}
